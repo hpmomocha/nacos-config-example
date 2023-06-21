@@ -1,0 +1,8 @@
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+# 如果不在 NacosSpringBootConfigExample 类中使用 @NacosPropertySource 注解, 则需要将下面的配置打开
+#    bootstrap:
+#      enable: true
+#    data-id: test
+#    auto-refresh: true
