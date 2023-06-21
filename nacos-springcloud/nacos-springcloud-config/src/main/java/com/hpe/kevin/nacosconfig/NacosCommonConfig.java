@@ -11,8 +11,17 @@ public class NacosCommonConfig {
     @Value("${useLocalCache:false}")
     private boolean useLocalCache;
 
-    @Value("${spring.datasource.username:defaultValue}")
+    @Value("${login.username}")
     private String username;
+
+    @Value("${spring.datasource.url}")
+    private String datasourceUrl;
+
+    @Value("${ReadTimeout}")
+    private int readTimeout;
+
+    @Value("${ConnectTimeout}")
+    private int connectTimeout;
 
     public boolean isUseLocalCache() {
         return useLocalCache;
@@ -28,5 +37,29 @@ public class NacosCommonConfig {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getDatasourceUrl() {
+        return datasourceUrl;
+    }
+
+    public void setDatasourceUrl(String datasourceUrl) {
+        this.datasourceUrl = datasourceUrl;
+    }
+
+    public int getReadTimeout() {
+        return readTimeout;
+    }
+
+    public void setReadTimeout(int readTimeout) {
+        this.readTimeout = readTimeout;
+    }
+
+    public int getConnectTimeout() {
+        return connectTimeout;
+    }
+
+    public void setConnectTimeout(int connectTimeout) {
+        this.connectTimeout = connectTimeout;
     }
 }

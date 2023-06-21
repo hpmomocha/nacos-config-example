@@ -3,3 +3,10 @@ Nacos配置列表中需要追加以下内容:
 2. 配置详情中的配置内容:
     useLocalCache=true
     spring.datasource.username=Lorraine666
+
+补充知识:
+当
+a. test.properties
+b. test-${spring.profiles.active}.properties
+的配置共存时,
+b的优先级高于a的优先级
