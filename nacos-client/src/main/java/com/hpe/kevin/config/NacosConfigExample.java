@@ -1,4 +1,4 @@
-package com.hpe.kevin;
+package com.hpe.kevin.config;
 
 import com.alibaba.nacos.api.NacosFactory;
 import com.alibaba.nacos.api.PropertyKeyConst;
