@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+  application:
+    name: openfeign-sentinel-service-consumer
+feign:
+  sentinel:
+    # openfeign 整合 sentinel
+    enabled: true # 默认为 false
