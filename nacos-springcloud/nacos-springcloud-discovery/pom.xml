@@ -14,6 +14,7 @@
     <modules>
         <module>nacos-springcloud-provider</module>
         <module>nacos-springcloud-consumer</module>
+        <module>nacos-springcloud-openfeign-consumer</module>
     </modules>
 
     <properties>
